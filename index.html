@@ -26,11 +26,11 @@
 				</li>
 				
 				<li class="nav-item" style="font-size: 20px;margin-left:15px;">
-					<a class="nav-link text-white" href="contact.html">QuestTogether</a>
+					<a class="nav-link text-white" href="#about">QuestTogether</a>
 				</li>
 			  
 				<li class="nav-item" style="font-size: 20px;margin-left:15px;">
-					<a class="nav-link text-white" href="contact.html">Contact</a>
+					<a class="nav-link text-white" href="#contact">Contact</a>
 				</li>
 				
 			</ul>
@@ -53,7 +53,7 @@
   
     <div class="row">
       <div class="col-md-9 mx-auto">
-	  <h4 class="mb-3">Our vision</h4>
+	  <h4 id="about" class="mb-3">Our vision</h4>
         <p>With Quest Together, we strive to give players a cool VR fantasy world to hang out with their friends in and play co-operative game modes together.</p>
         <p>The game will enter Early Access soon on Oculus and Steam and will be available for free. If you are interested in testing the game before it launches, please fill in the form at the bottom of this page and we will get back to you.</p>
       </div>
@@ -64,16 +64,18 @@
 	</div>
 	
 	<br><br>
-	 <!-- Services -->
+
   <!-- Portfolio Grid -->
   <section class="" id="portfolio">
     <div class="container">
+
       <div class="row">
         <div class="col-md-4 col-sm-6 portfolio-item">
+		
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
+                
               </div>
             </div>
             <img class="img-fluid" src="01.png" alt="">
@@ -90,7 +92,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="01.png" alt="">
+            <img class="img-fluid" src="02.png" alt="">
           </a>
           <div class="portfolio-caption text-center">
             <h4>Adventure</h4>
@@ -104,7 +106,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="01.png" alt="">
+            <img class="img-fluid" src="03.png" alt="">
           </a>
           <div class="portfolio-caption text-center">
             <h4>Co-operation</h4>
@@ -120,17 +122,17 @@
 	<!--Contact form-->
 	<div class="row">
     <div class="col-md-12 mx-auto">
-      <h4 class="mb-3">Contact</h4>
-      <form class="needs-validation" novalidate="">
+      <h4 id="contact" class="mb-3">Contact us</h4>
+      <form class="needs-validation" novalidate="" action="mailto:steffanmitrovic@live.nl">
         <div class="row">
-          <div class="col-md-4 mb-3">
+          <div class="col-md-6 mb-3">
             <label for="firstName">Name</label>
             <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
             <div class="invalid-feedback">
               Valid first name is required.
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-6 mb-3">
             <label for="lastName">Last name <span class="text-muted">(Optional)</span></label>
             <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
             <div class="invalid-feedback">
@@ -140,14 +142,14 @@
 		
         </div>
 <div class="row">
-        <div class="col-md-4 mb-3">
+        <div class="col-md-6 mb-3">
           <label for="email">Email</label>
           <input type="email" class="form-control" id="email" placeholder="you@example.com">
           <div class="invalid-feedback">
             Please enter a valid email address for shipping updates.
           </div>
         </div>
-		<div class="col-md-4 mb-3">
+		<div class="col-md-6 mb-3">
             <label for="lastName">Organization <span class="text-muted">(Optional)</span></label>
             <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
             <div class="invalid-feedback">
@@ -155,21 +157,9 @@
             </div>
           </div>
       </div>
-        <hr class="mb-4">
-        <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="same-address">
-          <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
-        </div>
-        <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="save-info">
-          <label class="custom-control-label" for="save-info">Save this information for next time</label>
-        </div>
-        <hr class="mb-4">
-
-        <h4 class="mb-3">Payment</h4>
 
         <div class="d-block my-3">
-				  <div class="custom-control custom-radio">
+		  <div class="custom-control custom-radio">
             <input id="business" name="reason" type="radio" class="custom-control-input" checked="" required="">
             <label class="custom-control-label" for="business">Business enquiry</label>
           </div>
@@ -183,9 +173,14 @@
             <label class="custom-control-label" for="other">Other</label>
           </div>
         </div>
+		
+		  <div class="form-group">
+			<label for="exampleFormControlTextarea1">Type your message here. If applying for testing, please enter your Oculus or Steam username along with your message.</label>
+			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+		  </div>
 
         <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Send email</button>
       </form>
     </div>
   </div>
@@ -195,8 +190,10 @@
 
   <!-- Footer -->
   <footer>
-    <div class="container-fluid bg-dark" style="height: 200px;">
+  
+    <div class="container-fluid bg-dark" style="height: 150px;">
 	<div class="container">
+	<!--<img class="img-fluid" src="art.jpg" width="70%">-->
       <div class="row">
         <div class="col-md-4">
           <span class="copyright">Copyright &copy; Studio Stefferp 2019</span>
